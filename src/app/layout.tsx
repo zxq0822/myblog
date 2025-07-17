@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   },
     // 此处添加网站图标设置
   icons: {
-    icon: "/favicon.ico", // 若图标文件是 favicon.ico
+    icon: "/src/app/favicon.ico", // 若图标文件是 favicon.ico
     // 也可设置不同尺寸的图标
-    // apple: "/apple-touch-icon.png",
-    // shortcut: "/shortcut-icon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/shortcut-icon.ico",
   },
 };
 
