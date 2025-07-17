@@ -19,6 +19,9 @@ interface MenuItem {
 }
 const menuItems: MenuItem[] = [
   { name: "Blog", href: "/" },
+  { name: "旅游", href: "/tag/旅游" },
+  { name: "心得", href: "/tag/心得" },
+  { name: "技术", href: "/tag/技术" },
 ];
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
