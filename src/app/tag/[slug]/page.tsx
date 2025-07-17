@@ -46,12 +46,7 @@ const Page = async (
   return (
     <div className="container mx-auto px-5 mb-10">
       <Header />
-      <Link href="/">
-        <Badge className="px-2 py-1">
-          <CircleX className="inline-block w-4 h-4 mr-2" />
-          Posts tagged with <strong className="mx-2">#{slug}</strong>{" "}
-        </Badge>
-      </Link>
+      {/* 移除显示 "Posts tagged with" 的代码 */}
       <BlogPostsPreview posts={result.posts} />
       <BlogPostsPagination
         pagination={result.pagination}
