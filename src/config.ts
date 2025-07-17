@@ -4,7 +4,7 @@ const buildConfig = () => {
   const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "Radiance.";
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Qing";
   const defaultTitle =
-    process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "Blog";
+    process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "Qing";
   const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Life About Myself.";
 
   return {
