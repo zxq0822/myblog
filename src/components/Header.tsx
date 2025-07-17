@@ -13,15 +13,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FunctionComponent } from "react";
 interface MenuItem {
-  name: string;
-  href: string;
+  name: string;       // 显示在导航栏中的名称
+  href: string;       // 链接地址
+  slug?: string;      // 对应的标签 slug（如果是标签页）
   openInNewTab?: boolean;
 }
+
 const menuItems: MenuItem[] = [
   { name: "主页", href: "/" },
-  { name: "日记", href: "/tag/Diary" },
-  { name: "夜想", href: "/tag/NightThoughts" },
-  { name: "游记", href: "/tag/TravelNotes" },
+  { name: "日记", href: "/tag/Diary", slug: "Diary" },
+  { name: "夜想", href: "/tag/NightThoughts", slug: "NightThoughts" },
+  { name: "游记", href: "/tag/TravelNotes", slug: "TravelNotes" },
   { name: "关于我", href: "/about" },
 ];
 export const Navigation: FunctionComponent = () => {
