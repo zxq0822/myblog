@@ -19,7 +19,7 @@ interface MenuItem {
   openInNewTab?: boolean;
 }
 
-const menuItems: MenuItem[] = [
+export  const menuItems: MenuItem[] = [
   { name: "主页", href: "/" },
   { name: "日记", href: "/tag/Diary", slug: "Diary" },
   { name: "夜想", href: "/tag/NightThoughts", slug: "NightThoughts" },
