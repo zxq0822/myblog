@@ -12,21 +12,18 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FunctionComponent } from "react";
-
 interface MenuItem {
   name: string;
   href: string;
-  slug?: string;
   openInNewTab?: boolean;
 }
-export const menuItems: MenuItem[] = [
+const menuItems: MenuItem[] = [
   { name: "主页", href: "/" },
-  { name: "日记", href: "/tag/Diary", slug: "Diary" },
-  { name: "夜想", href: "/tag/NightThoughts", slug: "NightThoughts" },
-  { name: "游记", href: "/tag/TravelNotes", slug: "TravelNotes" },
+  { name: "日记", href: "/tag/Diary" },
+  { name: "夜想", href: "/tag/NightThoughts" },
+  { name: "游记", href: "/tag/TravelNotes" },
   { name: "关于我", href: "/about" },
 ];
-
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
 
